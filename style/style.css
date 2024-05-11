@@ -1,0 +1,52 @@
+/* Start Global Rules */
+:root {background-color: #ecf5ff; font-size: 62.5%; /* 62.5% * 16px = 10px */}
+*{
+  margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; user-select: none;
+  font-family: "Work Sans", sans-serif; color: #333;
+}
+h1,h2,h3,h4{margin-bottom: 1rem;}
+h1 {font-size: 5.4rem; color: #56a5eb; margin-bottom: 5rem;}
+h1 > span {font-size: 2.4rem; font-weight: 500;}
+h2 {font-size: 4.2rem; font-weight: 700; margin-bottom: 4rem;}
+h3 {font-size: 2.8rem; font-weight: 500;}
+/* End Global Rules */
+
+/* Start Layout Rules */
+.container {
+  width: 100vw; height: 100vh;  
+  display: flex; justify-content: center; align-items: center;  
+  max-width: 80rem; margin: 0 auto; padding: 2rem;
+}
+.container > * {width: 100%;}
+.flex-col {display: flex; flex-direction: column;}
+.flex-center {justify-content: center; align-items: center;}
+.justify-center {justify-content: center;}
+.text-center {text-align: center;}
+.hidden {display: none;} 
+/* End Layout Rules */
+
+/* Start BUTTONS Rules */
+.btn {
+  font-size: 1.8rem; text-decoration: none;  
+  width: 20rem; padding: 1rem 0; margin-bottom: 1rem; text-align: center;  
+  background-color: white; color: #56a5eb; border: 0.1rem solid #56a5eb;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem); transition: transform 150ms;  
+}
+.btn[disabled]:hover {
+  cursor: not-allowed; box-shadow: none; transform: none;  
+}
+/* End BUTTONS Rules */
+
+/* FORMS */
+form {display: flex; flex-direction: column; align-items: center; width: 100%;}
+input {
+  font-size: 1.8rem;   
+  width: 20rem; margin-bottom: 1rem; padding: 1.5rem;  
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+input::placeholder {color: #aaa;}
